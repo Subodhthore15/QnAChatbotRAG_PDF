@@ -11,10 +11,12 @@ from langchain_community.embeddings import OllamaEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader
 
-import os 
+import os
 
+# API to secrets
 GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 os.environ['GROQ_API_KEY'] = GROQ_API_KEY
+
 ## LLM model
 llm = ChatGroq(model="gemma2-9b-it")
 
