@@ -54,7 +54,7 @@ if uploadedPDFs:
     documents = []
 
     for pdf_file in uploadedPDFs:
-        temppdf = f"./temp.pdf"
+        temppdf = f"temp.pdf"
         with open(temppdf,"wb") as file:
             file.write(pdf_file.getvalue())
             file_name = pdf_file.name
