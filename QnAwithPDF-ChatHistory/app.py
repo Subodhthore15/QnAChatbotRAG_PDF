@@ -18,7 +18,7 @@ GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 os.environ['GROQ_API_KEY'] = GROQ_API_KEY
 
 ## LLM model
-llm = ChatGroq(model="gemma2-9b-it")
+llm = ChatGroq(model="gemma2-9b-it", temperature=0.2)
 
 ## Embeddings : 2304 size of vector for each sent/ word.
 embeddings = OllamaEmbeddings(model="gemma2:2b")
