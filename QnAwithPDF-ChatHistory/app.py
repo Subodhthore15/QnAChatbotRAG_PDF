@@ -13,7 +13,7 @@ from langchain_community.document_loaders import PyPDFLoader
 
 import os
 
-# API to secrets
+# API to secrets setting
 GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 os.environ['GROQ_API_KEY'] = GROQ_API_KEY
 
